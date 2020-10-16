@@ -1,0 +1,56 @@
+{
+  "pages":[
+    "pages/home/index",
+    "pages/evaluating/index",
+    "pages/condition/index",
+    "pages/handle/index",
+    "pages/my/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+    "tabBar": {
+    "backgroundColor":"#eee",
+    "position":"bottom",
+    "color":"#bfbfbf",
+    "selectedColor":"#f65a25",
+    "borderStyle":"white",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "政策普及",
+        "iconPath":"/images/home.png",
+        "selectedIconPath":"/images/home_sel.png"
+      },
+      {
+        "pagePath": "pages/evaluating/index",
+        "text": "自我评测",
+        "iconPath":"/images/eval.png",
+        "selectedIconPath":"/images/eval_sel.png"
+      },
+      {
+        "pagePath": "pages/condition/index",
+        "text": "条件提升",
+        "iconPath":"/images/cond.png",
+        "selectedIconPath":"/images/cond_sel.png"
+      },
+      {
+        "pagePath": "pages/handle/index",
+        "text": "办理地址",
+        "iconPath":"/images/nav.png",
+        "selectedIconPath":"/images/nav_sel.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "个人中心",
+        "iconPath":"/images/my.png",
+        "selectedIconPath":"/images/my_sel.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
