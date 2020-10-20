@@ -1,2 +1,84 @@
 <!--pages/evaluating/index.wxml-->
-<text>pages/evaluating/index.wxml</text>
+<view class="container">
+<view class="top_con">
+<view class="title_con">
+  <view class="title">上海居住证积分落户通小程序</view>
+  <view class="biaoqian">
+    <view>政策普及</view>
+    <view>办理指导</view>
+    <view>条件评估</view>
+    <view>咨询服务</view>
+  </view>
+</view>
+<view class="big_title">
+  <view>
+    上海居住证120积分
+  </view>
+  <view>
+    居转户模拟测试
+  </view>
+</view>
+</view>
+<view class="card_con">
+<view class="title">想要定居上海必须关注的三大模块</view>
+<view class="tab-con">
+  <view class="item">
+    <view class="tab1">1</view>
+    <view>社保缴纳情况</view>
+  </view>
+  <view class="item">
+    <view class="tab1">2</view>
+    <view>上海居住证积分</view>
+  </view>
+  <view class="item">
+    <view class="tab1">3</view>
+    <view>上海居住证转户口</view>
+  </view>
+</view>
+<view class="dec">
+  上海居住证积分落户通为外地人在上海申请居住证、居住证积分、居住户等提供免费咨询、协助遍历服务。本平台为公益性服务平台，政策侧咨询不收取任何费用。
+</view>
+</view>
+
+<view class="jisuan_con">
+<view class="item">
+<view class="icon">
+  <image src="/images/icon/icon1.png"></image>
+</view>
+<view class="con">
+  <view class="con-title">积分模拟</view>
+  <view>系统</view>
+</view>
+</view>
+
+<view class="item">
+<view class="icon">
+  <image src="/images/icon/icon2.png"></image>
+</view>
+<view class="con">
+  <view class="con-title">居转户条件</view>
+  <view>评定</view>
+</view>
+</view>
+
+<view class="item">
+<view class="icon">
+  <image src="/images/icon/icon3.png"></image>
+</view>
+<view class="con">
+  <view class="con-title">社保、个税</view>
+  <view>计算器</view>
+</view>
+</view>
+
+<view class="item">
+<view class="icon">
+  <image src="/images/icon/icon4.png"></image>
+</view>
+<view class="con">
+  <view class="con-title">私人订制</view>
+  <view>积分落户规划</view>
+</view>
+</view>
+</view>
+</view>

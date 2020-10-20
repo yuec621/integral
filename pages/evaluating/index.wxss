@@ -1,1 +1,142 @@
 /* pages/evaluating/index.wxss */
+.top_con{
+  padding: 10rpx 20rpx;
+  width: 100%;
+  height: 500rpx;
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
+}
+.top_con::after{
+  content: '';
+  width: 100%;
+  height: 500rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  border-radius: 0 0 30% 30%;
+  background: linear-gradient(160deg,#f65a25, #f65a25);
+}
+.title_con{
+  padding: 20rpx 40rpx;
+  color: #fff;
+}
+.title_con .title{
+  font-size: 28rpx;
+  font-weight: bold;
+  text-shadow:4rpx 4rpx 4rpx grey;
+}
+.title_con .biaoqian{
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  text-shadow:4rpx 4rpx 4rpx grey;
+}
+.big_title{
+  font-style: italic;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 60rpx;
+  text-align: center;
+  text-shadow:10rpx 10rpx 10rpx grey;
+}
+
+.card_con{
+  background-color: #fff;
+  margin-top: -160rpx;
+  width: 710rpx;
+  border: 1px solid #eee;
+  border-radius: 20rpx;
+  box-shadow: 0 0 10rpx rgba(0, 0, 0, .1);
+}
+.card_con .title{
+  text-align: center;
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-top: 20rpx;
+}
+.card_con .tab-con{
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.card_con .tab-con .item{
+  display: flex;
+  justify-content: space-between;
+  width: 32%;
+  position: relative;
+  padding-left: 80rpx;
+}
+.card_con .tab-con .item .tab1{
+  position: absolute;
+  top: -30rpx;
+  left: 0;
+  font-size: 100rpx;
+  font-style: italic;
+  font-weight: bold;
+  color: #f58800;
+  opacity: 0.2;
+}
+.card_con .tab-con .item view{
+  font-size: 30rpx;
+  font-weight: bold;
+  padding-top: 20rpx;
+  color: #333;
+  padding-right: 20rpx;
+}
+.card_con .dec{
+  line-height: 44rpx;
+  padding: 20rpx;
+  font-size: 26rpx;
+  color: #333;
+  font-weight: bold;
+  margin-top: 20rpx;
+}
+.jisuan_con {
+  margin-top: 40rpx;
+  display: flex;
+  flex-wrap: wrap;
+  width: 750rpx;
+}
+.jisuan_con .item{
+  width: 48%;
+  display: flex;
+  text-align: center;
+  padding-top: 40rpx;
+  padding-bottom: 40rpx;
+}
+.jisuan_con .item:first-child{
+  border-bottom: 2rpx solid #eee;
+}
+.jisuan_con .item:nth-child(2){
+  border-left: 2rpx solid #eee;
+}
+.jisuan_con .item:nth-child(4){
+border-top: 2rpx solid #eee;
+border-left: 2rpx solid #eee;
+}
+.jisuan_con .item .icon{
+  width: 64rpx;
+  height: 64rpx;
+  margin-left: 60rpx;
+}
+.jisuan_con .item .icon image{
+  width: 100%;
+  height: 100%;
+}
+.jisuan_con .item .con{
+  margin-left: 20rpx;
+  text-align: left;
+}
+.jisuan_con .item .con view{
+font-size: 24rpx;
+color: #999;
+}
+.jisuan_con .item .con view.con-title{
+  font-size: 28rpx;
+  color: #333;
+}
+

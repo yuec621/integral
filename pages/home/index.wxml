@@ -1,2 +1,116 @@
 <!--pages/policy/index.wxml-->
-<text>pages/policy/index.wxml</text>
+<view class="container">
+  <view class='page_row' bindtap="suo">
+    <view class="search">
+      <view class="df search_arr">
+        <icon class="searchcion" size='20' type='search' color="#fff"></icon>
+        <input class="" disabled placeholder="请输入搜索关键词" value="{{shoopingtext}}" placeholder-class="phcolor" />
+      </view>
+    </view>
+  </view>
+  <!-- 菜单滑动 -->
+  <view class="" style="width:750rpx;">
+    <scroll-view scroll-x="true" class="nav {{isFixed?'fixed':''}}"  id="navbar" scroll-left="{{navScrollLeft}}" scroll-with-animation="{{true}}">
+      <block wx:for="{{navData}}" wx:for-index="idx" wx:for-item="navItem" wx:key="idx">
+        <view class="nav-item {{currentTab == idx ?'active':''}}" data-current="{{idx}}" bindtap="switchNav">
+          {{navItem.text}}</view>
+      </block>
+    </scroll-view>
+    <!-- 页面内容 -->
+    <view class="weui-tab__panel">
+      <!-- 第1个页面 -->
+      <view class="weui-tab_content" hidden="{{currentTab != 0}}">
+        <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}"
+          duration="{{duration}}">
+          <block wx:for="{{imgUrls}}">
+            <swiper-item>
+              <image src="{{item}}" class="slide-image" width="355" height="150" />
+            </swiper-item>
+          </block>
+        </swiper>
+
+        <view class="item-list">
+          <view class="item" wx:for="{{dataList}}" wx:key="item.id" bindtap="enterDetail" data-id="{{item.id}}">
+            <view class="img">
+              <image src="{{item.img}}"></image>
+            </view>
+            <view class="desc">
+              <view class="title">{{item.title}}</view>
+              <view class="count">
+                <view class="share_coll">
+                  <view class="share"><image src="/images/share.png"></image> <view>分享</view></view>
+                  <view class="coll" ><image src="/images/xin.png"></image></view>
+                </view>
+                <view class="date" wx:if="{{item.dates!=null}}">
+                  {{item.dates}}
+                </view>
+                <view class="date" wx:else="{{item.dates==null}}">
+                  <!-- {{item.dates}} -->
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <!-- 第2个页面 -->
+      <view class="weui-tab_content" hidden="{{currentTab != 1}}">
+        <view class="item-list">
+          <view class="item" wx:for="{{dataList}}" wx:key="item.id" bindtap="enterDetail" data-id="{{item.id}}">
+            <view class="img">
+              <image src="{{item.img}}"></image>
+            </view>
+            <view class="desc">
+              <view class="title">{{item.title}}</view>
+              <view class="count">
+                <view class="share_coll">
+                  <view class="share"><image src="/images/share.png"></image> <view>分享</view></view>
+                  <view class="coll" ><image src="/images/xin.png"></image></view>
+                </view>
+                <view class="date" wx:if="{{item.dates!=null}}">
+                  {{item.dates}}
+                </view>
+                <view class="date" wx:else="{{item.dates==null}}">
+                  <!-- {{item.dates}} -->
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <!-- 第3个页面 -->
+      <view class="weui-tab_content" hidden="{{currentTab != 2}}">
+        <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}"
+          duration="{{duration}}">
+          <block wx:for="{{imgUrls}}">
+            <swiper-item>
+              <image src="{{item}}" class="slide-image" width="355" height="150" />
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+      <!-- 第4个页面 -->
+      <view class="weui-tab_content" hidden="{{currentTab != 3}}">
+        <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}"
+          duration="{{duration}}">
+          <block wx:for="{{imgUrls}}">
+            <swiper-item>
+              <image src="{{item}}" class="slide-image" width="355" height="150" />
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+      <!-- 第5个页面 -->
+      <view class="weui-tab_content" hidden="{{currentTab != 4}}">
+        <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}"
+          duration="{{duration}}">
+          <block wx:for="{{imgUrls}}">
+            <swiper-item>
+              <image src="{{item}}" class="slide-image" width="355" height="150" />
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+    </view>
+  </view>
+
+</view>
