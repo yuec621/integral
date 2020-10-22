@@ -1,6 +1,29 @@
 <!--component/fix/index.wxml-->
 <movable-area class="movable-area">
   <movable-view class="movable-view" direction="all" x="{{x}}" y="{{y}} " >
+    <view class="wechat fix">
+      <image src="/images/fix/wechat.png"></image>
+      <view>公众号</view>
+    </view>
 
+    <view class="msg fix">
+      <image src="/images/fix/msg.png"></image>
+      <view>入群</view>
+    </view>
+
+    <view class="tel fix">
+        <image src="/images/fix/tel.png"></image>
+        <view>电话</view>
+    </view>
+
+    <view class="kefu fix">
+      <image src="/images/fix/kefu.png"></image>
+      <view>客服</view>
+    </view>
+
+    <view class="share fix">
+      <image src="/images/fix/share.png"></image>
+      <view>分享</view>
+    </view>
   </movable-view>
 </movable-area>
