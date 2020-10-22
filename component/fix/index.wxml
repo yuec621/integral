@@ -1,0 +1,6 @@
+<!--component/fix/index.wxml-->
+<movable-area class="movable-area">
+  <movable-view class="movable-view" direction="all" x="{{x}}" y="{{y}} " >
+
+  </movable-view>
+</movable-area>

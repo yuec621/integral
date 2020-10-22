@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText":"政策普及",
-  "usingComponents": {}
+  "usingComponents": {
+    "fix_com":"/component/fix"
+  }
 }

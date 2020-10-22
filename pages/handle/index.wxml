@@ -16,15 +16,210 @@
     <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">居住证申请</view>
     <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">居住证积分申请</view>
     <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">居转户申请</view>
+    <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="2" bindtap="swichNav">居转户申请</view>
 </view>
 
 <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">
     <swiper-item>
+        <view class="sel-sconed">
+        <view class="picker-box">
+            <picker class="pickerSconed" mode="multiSelector"bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+                <view class="picker">
+                 {{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}
+                </view>
+            </picker>
+        </view>
+        <!-- 内容列表 -->
+        <view class="item-list">
+            <view class="item">
+                <view class="title">
+                    陆家嘴街道社区事务受理服务中心
+                </view>
+                <view class="con">
+                        <view class="date">
+                            <view>
+                                时间: 工作日:8:30至16:30
+                            </view>
+                            <view>
+                                周末及假期:8:30至11:30
+                            </view>
+                            <view>
+                                地址：栖霞路120号
+                            </view>
+                        </view>
+                        <view class="pic">
+                            <image src="/images/test/banner.png"></image>
+                        </view>
+                </view>
+                <view class="icon">
+                    <view class="nav">
+                        <image src="/images/hand/nav.png"></image>
+                        <view>导航</view>
+                    </view>
+                    <view class="tel">
+                        <image src="/images/hand/tel.png"></image>
+                        <view>电话</view>
+                    </view>
+                    <view class="col">
+                        <image src="/images/hand/col.png"></image>
+                        <view>收藏</view>
+                    </view>
+                </view>
+            </view>
+
+            <view class="item">
+                <view class="title">
+                    陆家嘴街道社区事务受理服务中心
+                </view>
+                <view class="con">
+                        <view class="date">
+                            <view>
+                                时间: 工作日:8:30至16:30
+                            </view>
+                            <view>
+                                周末及假期:8:30至11:30
+                            </view>
+                            <view>
+                                地址：栖霞路120号
+                            </view>
+                        </view>
+                        <view class="pic">
+                            <image src="/images/test/banner.png"></image>
+                        </view>
+                </view>
+                <view class="icon">
+                    <view class="nav">
+                        <image src="/images/hand/nav.png"></image>
+                        <view>导航</view>
+                    </view>
+                    <view class="tel">
+                        <image src="/images/hand/tel.png"></image>
+                        <view>电话</view>
+                    </view>
+                    <view class="col">
+                        <image src="/images/hand/col.png"></image>
+                        <view>收藏</view>
+                    </view>
+                </view>
+            </view>
+
+            <view class="item">
+                <view class="title">
+                    陆家嘴街道社区事务受理服务中心
+                </view>
+                <view class="con">
+                        <view class="date">
+                            <view>
+                                时间: 工作日:8:30至16:30
+                            </view>
+                            <view>
+                                周末及假期:8:30至11:30
+                            </view>
+                            <view>
+                                地址：栖霞路120号
+                            </view>
+                        </view>
+                        <view class="pic">
+                            <image src="/images/test/banner.png"></image>
+                        </view>
+                </view>
+                <view class="icon">
+                    <view class="nav">
+                        <image src="/images/hand/nav.png"></image>
+                        <view>导航</view>
+                    </view>
+                    <view class="tel">
+                        <image src="/images/hand/tel.png"></image>
+                        <view>电话</view>
+                    </view>
+                    <view class="col">
+                        <image src="/images/hand/col.png"></image>
+                        <view>收藏</view>
+                    </view>
+                </view>
+            </view>
+
+            <view class="item">
+                <view class="title">
+                    陆家嘴街道社区事务受理服务中心
+                </view>
+                <view class="con">
+                        <view class="date">
+                            <view>
+                                时间: 工作日:8:30至16:30
+                            </view>
+                            <view>
+                                周末及假期:8:30至11:30
+                            </view>
+                            <view>
+                                地址：栖霞路120号
+                            </view>
+                        </view>
+                        <view class="pic">
+                            <image src="/images/test/banner.png"></image>
+                        </view>
+                </view>
+                <view class="icon">
+                    <view class="nav">
+                        <image src="/images/hand/nav.png"></image>
+                        <view>导航</view>
+                    </view>
+                    <view class="tel">
+                        <image src="/images/hand/tel.png"></image>
+                        <view>电话</view>
+                    </view>
+                    <view class="col">
+                        <image src="/images/hand/col.png"></image>
+                        <view>收藏</view>
+                    </view>
+                </view>
+            </view>
+
+            <view class="item">
+                <view class="title">
+                    陆家嘴街道社区事务受理服务中心
+                </view>
+                <view class="con">
+                        <view class="date">
+                            <view>
+                                时间: 工作日:8:30至16:30
+                            </view>
+                            <view>
+                                周末及假期:8:30至11:30
+                            </view>
+                            <view>
+                                地址：栖霞路120号
+                            </view>
+                        </view>
+                        <view class="pic">
+                            <image src="/images/test/banner.png"></image>
+                        </view>
+                </view>
+                <view class="icon">
+                    <view class="nav">
+                        <image src="/images/hand/nav.png"></image>
+                        <view>导航</view>
+                    </view>
+                    <view class="tel">
+                        <image src="/images/hand/tel.png"></image>
+                        <view>电话</view>
+                    </view>
+                    <view class="col">
+                        <image src="/images/hand/col.png"></image>
+                        <view>收藏</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        </view>
+    </swiper-item>
+    <swiper-item>
         <view>居住证申请</view>
     </swiper-item>
     <swiper-item>
         <view>居住证申请</view>
     </swiper-item>
+
     <swiper-item>
         <view>居住证申请</view>
     </swiper-item>

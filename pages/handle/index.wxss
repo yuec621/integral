@@ -25,12 +25,12 @@
   background: rgba(255, 255, 255, .2);
 }
 .weui-search-bar__box {
-  position: relative;
+  /* position: relative; */
   padding-left: 30px;
   padding-right: 30px;
   width: 100%;
   box-sizing: border-box;
-  z-index: 1;
+  /* z-index: 1; */
 }
 .weui-search-bar__input {
   height: 28px;
@@ -49,6 +49,7 @@
   text-align: center;
   line-height: 80rpx;
   background-color: #f65a25;
+  white-space: nowrap;
 }
 .swiper-tab-list{  font-size: 30rpx;
   display: inline-block;
@@ -66,10 +67,83 @@
   left: 50%;
   transform: translate(-50%);
 }
-.on{ color: #fff;
-  }
+.on{ 
+  color: #fff;
+}
 
-.swiper-box{ display: block; height: 100%; width: 100%; overflow: hidden; }
+.swiper-box{ 
+  display: block; 
+  /* height: 100%; */
+  width: 100%; 
+  /* overflow: hidden;  */
+}
 .swiper-box view{
   text-align: center;
+}
+/* 内容 */
+.picker-box{
+border-bottom: 2rpx solid #eee;
+}
+.item-list .item{
+  padding: 20rpx 0 20rpx 40rpx;
+  box-shadow: 0 0 10rpx #eee;
+  border-radius: 10rpx;
+  width: 680rpx;
+  margin: 40rpx auto 0;
+}
+.item-list .item .title{
+ text-align: left;
+ font-size: 30rpx;
+ color: #666;
+}
+.item-list .item .con{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2rpx solid #eee;
+  padding-bottom: 20rpx;
+}
+.item-list .item .con .date{
+  width: 70%;
+  font-size: 24rpx;
+  color: #999;
+  margin-top: 30rpx;
+}
+.item-list .item .con .date view{
+  text-align: left;
+  margin-bottom: 16rpx;
+}
+.item-list .item .con .date view:nth-child(2){
+  padding-left: 60rpx;
+}
+.item-list .item .con .pic{
+  width: 28%;
+  height: 200rpx;
+}
+.item-list .item .con .pic image{
+  width: 100%;
+  height: 100%;
+}
+.item-list .icon{
+  margin-top: 40rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+}
+.item-list .icon .tel,
+.item-list .icon .col,
+.item-list .icon .nav{
+  display: flex;
+  margin-right: 40rpx;
+}
+.item-list .icon .col image,
+.item-list .icon .tel image,
+.item-list .icon .nav image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.item-list .icon .tel view,
+.item-list .icon .col view,
+.item-list .icon .nav view{
+  font-size: 28rpx;
+  color: #f65a25;
+  margin-left: 18rpx;
 }
